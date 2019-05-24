@@ -1,0 +1,23 @@
+{% extends 'OdiseoBackendBundle::layout.html.twig' %}
+
+{% import 'OdiseoBackendBundle:Macro:headers.html.twig' as headers %}
+{% import 'OdiseoBackendBundle:Macro:buttons.html.twig' as buttons %}
+
+{% set header = configuration.vars.header|default(metadata.applicationName~'.ui.edit_'~metadata.name) %}
+
+{% block title %}{{ parent() }} {{ header|trans }}{% endblock %}
+
+{% block content_title %}
+    <h1><i class="fa fa-{{ configuration.vars.icon|default('edit') }}"></i> {{ header|trans }}</h1>
+{% endblock %}
+
+{% block breadcrumb %}
+    {% include configuration.vars.templates.breadcrumb|default('@OdiseoBackend/Crud/Update/_breadcrumb.html.twig') %}
+{% endblock %}
+
+{% form_theme form 'OdiseoBackendBundle:Form:theme.html.twig' %}
+
+{% block content %}
+{% include '@OdiseoBackend/Crud/Update/_header.html.twig' %}
+{% include '@OdiseoBackend/Crud/Update/_content.html.twig' %}
+{% endblock %}

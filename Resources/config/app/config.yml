@@ -1,0 +1,13 @@
+sylius_grid:
+    templates:
+        action:
+            default: "@OdiseoBackend/Grid/Action/default.html.twig"
+            create: "@OdiseoBackend/Grid/Action/create.html.twig"
+            delete: "@OdiseoBackend/Grid/Action/delete.html.twig"
+            show: "@OdiseoBackend/Grid/Action/show.html.twig"
+            update: "@OdiseoBackend/Grid/Action/update.html.twig"
+        filter:
+            string: "@OdiseoBackend/Grid/Filter/string.html.twig"
+            boolean: "@OdiseoBackend/Grid/Filter/boolean.html.twig"
+            date: "@OdiseoBackend/Grid/Filter/date.html.twig"
+            entity: "@OdiseoBackend/Grid/Filter/entity.html.twig"

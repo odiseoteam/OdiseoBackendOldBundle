@@ -1,0 +1,14 @@
+odiseo_backend_index:
+    path: /
+    defaults:
+        _controller: FrameworkBundle:Redirect:redirect
+        route: %odiseo_backend.homepage_route%
+        permanent: true
+
+odiseo_backend_security:
+    resource: @OdiseoBackendBundle/Resources/config/routing/security.yml
+
+easy_admin_bundle:
+    resource: "@EasyAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /data

@@ -1,0 +1,27 @@
+{
+	"name" : "odiseoteam/odiseo-backend-bundle",
+	"type" : "symfony-bundle",
+	"description" : "This bundle make an initial setup of backend",
+	"keywords" : [
+		"symfony",
+		"backend",
+		"cms"
+	],
+	"homepage" : "http://odiseo.com.ar",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Odiseo Team",
+			"email" : "team@odiseo.com.ar"
+		}
+	],
+	"require" : {
+		"php" : ">=5.3.9",
+	  	"white-october/pagerfanta-bundle" : "~1.0",
+		"javiereguiluz/easyadmin-bundle" : "~1.12.4",
+        "sylius/resource-bundle" : "^1.0@beta",
+        "sylius/grid-bundle" : "^1.0@beta"
+	},
+	"autoload" : {
+		"psr-4": { "Odiseo\\Bundle\\BackendBundle\\": "" }
+	}
+}
