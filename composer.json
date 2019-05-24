@@ -18,8 +18,7 @@
 		"php" : ">=5.3.9",
 	  	"white-october/pagerfanta-bundle" : "~1.0",
 		"javiereguiluz/easyadmin-bundle" : "~1.12.4",
-        "sylius/resource-bundle" : "^1.0@beta",
-        "sylius/grid-bundle" : "^1.0@beta"
+        "sylius/resource-bundle" : "v0.15.*"
 	},
 	"autoload" : {
 		"psr-4": { "Odiseo\\Bundle\\BackendBundle\\": "" }
